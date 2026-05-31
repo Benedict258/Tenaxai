@@ -75,7 +75,7 @@ The application includes 19 launch-lifecycle modules grouped into three domains.
 
 ### Installation
 ```bash
-git clone https://github.com/Benedict258/Tenaxai.git
+git clone https://github.com/<your-username>/Tenaxai.git
 cd Tenaxai
 npm install
 ```
