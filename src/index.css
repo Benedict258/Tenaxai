@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 80 56% 25%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 81 92% 80%;
+    --accent-foreground: 80 97% 6%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 80 56% 25%;
+    --radius: 0.5rem;
+
+    /* Brand tokens */
+    --lime-primary: #d9f99d;
+    --lime-dark: #4d661c;
+    --lime-medium: #b3d17a;
+    --surface-grid: #f1f5f9;
+    --charcoal: #191c1e;
+    --indigo-accent: #494bd6;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 81 92% 80%;
+    --primary-foreground: 80 97% 6%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* ============================================
+   GEOMETRIC GRID BACKGROUND
+   ============================================ */
+.grid-bg {
+  background-color: hsl(var(--background));
+  background-image:
+    linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.dark .grid-bg {
+  background-color: hsl(var(--background));
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* ============================================
+   CARD STYLES
+   ============================================ */
+.tenax-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid hsl(var(--border));
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  transition: all 0.2s ease;
+}
+
+.tenax-card:hover {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 4px 10px -3px rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+}
+
+.dark .tenax-card {
+  background: rgba(26, 29, 36, 0.9);
+  border-color: hsl(var(--border));
+}
+
+/* ============================================
+   BUTTON STYLES
+   ============================================ */
+.btn-primary {
+  background: var(--lime-primary) !important;
+  color: #111827 !important;
+  border: none;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: all 0.15s ease;
+}
+
+.btn-primary:hover {
+  background: var(--lime-medium) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(77, 102, 28, 0.25);
+}
+
+.btn-ghost-outline {
+  background: transparent;
+  border: 1px solid hsl(var(--border));
+  color: var(--charcoal);
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: all 0.15s ease;
+}
+
+.btn-ghost-outline:hover {
+  background: hsl(var(--secondary));
+}
+
+/* ============================================
+   STATUS / BADGE TOKENS
+   ============================================ */
+.badge-lime { background: #d9f99d; color: #364e03; border: 1px solid #b3d17a; }
+.badge-indigo { background: #eeebff; color: #5659e4; border: 1px solid #c0c1ff; }
+.badge-slate { background: #f3f4f5; color: #44483b; border: 1px solid #e1e3e4; }
+.badge-green { background: #dcfce7; color: #16a34a; border: 1px solid #86efac; }
+.badge-amber { background: #fef3c7; color: #92400e; border: 1px solid #fcd34d; }
+.badge-red { background: #ffdad6; color: #93000a; border: 1px solid #fca5a5; }
+.badge-blue { background: #dbeafe; color: #1d4ed8; border: 1px solid #93c5fd; }
+.badge-purple { background: #ede9fe; color: #7c3aed; border: 1px solid #c4b5fd; }
+.badge-teal { background: #ccfbf1; color: #0d9488; border: 1px solid #5eead4; }
+.badge-orange { background: #ffedd5; color: #ea580c; border: 1px solid #fdba74; }
+
+/* ============================================
+   CREATIVE CARD VARIANTS
+   ============================================ */
+.creative-variant-card {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid hsl(var(--border));
+  background: #ffffff;
+  transition: all 0.2s ease;
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-fade-in { animation: fadeIn 0.35s ease-out forwards; }
+.animate-pulse-dot { animation: pulse-dot 2s ease-in-out infinite; }
+
+/* ============================================
+   SKELETON
+   ============================================ */
+.skeleton {
+  background: linear-gradient(90deg, hsl(var(--muted)) 25%, hsl(var(--background)) 50%, hsl(var(--muted)) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 0.5rem;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}

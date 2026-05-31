@@ -1,0 +1,50 @@
+[
+  {
+    "id": "tenax_growth_copilot",
+    "name": "tenax Growth Copilot",
+    "description": "Main decision-maker: routes tasks to specialized agents and aggregates responses.",
+    "integration_credits": 0,
+    "skills": 0,
+    "memory": "on"
+  },
+  {
+    "id": "market_analyst",
+    "name": "Market Analyst",
+    "description": "Market research and competitor insights with regulatory notes.",
+    "integration_credits": 0,
+    "skills": 0,
+    "memory": "on"
+  },
+  {
+    "id": "creative_generator",
+    "name": "Creative Generator",
+    "description": "Generates multi-channel creative assets and messaging variations.",
+    "integration_credits": 0,
+    "skills": 0,
+    "memory": "on"
+  },
+  {
+    "id": "budget_optimizer",
+    "name": "Budget Optimizer",
+    "description": "Forecasts and optimizes marketing spend allocation.",
+    "integration_credits": 0,
+    "skills": 0,
+    "memory": "on"
+  },
+  {
+    "id": "simulation_risk",
+    "name": "Simulation Risk",
+    "description": "Runs what-if simulations and mitigation strategies.",
+    "integration_credits": 0,
+    "skills": 0,
+    "memory": "on"
+  },
+  {
+    "id": "marketmentor",
+    "name": "MarketMentor",
+    "description": "Chat mentor for marketers with web access and project context.",
+    "integration_credits": 0,
+    "skills": 0,
+    "memory": "on"
+  }
+]

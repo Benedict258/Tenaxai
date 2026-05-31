@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TenaxAI | Resources Directory</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700;900&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#d9f99d",
+                        "on-error-container": "#93000a",
+                        "background": "#f8f9fa",
+                        "secondary-fixed-dim": "#c0c6db",
+                        "secondary-container": "#d9dff5",
+                        "tertiary": "#494bd6",
+                        "on-tertiary-fixed-variant": "#2f2ebe",
+                        "surface-dim": "#d9dadb",
+                        "tertiary-container": "#eeebff",
+                        "on-tertiary-fixed": "#07006c",
+                        "surface-container-low": "#f3f4f5",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#4d661c",
+                        "on-primary-fixed-variant": "#364e03",
+                        "on-primary-container": "#597428",
+                        "tertiary-fixed": "#e1e0ff",
+                        "primary-fixed": "#ceee93",
+                        "surface": "#f8f9fa",
+                        "inverse-primary": "#b3d17a",
+                        "surface-tint": "#4d661c",
+                        "on-background": "#191c1d",
+                        "tertiary-fixed-dim": "#c0c1ff",
+                        "surface-bright": "#f8f9fa",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#e1e3e4",
+                        "surface-container-high": "#e7e8e9",
+                        "on-surface-variant": "#44483b",
+                        "on-tertiary-container": "#5659e4",
+                        "on-surface": "#191c1d",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-primary-fixed": "#131f00",
+                        "on-secondary-fixed-variant": "#404758",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-secondary-fixed": "#141b2b",
+                        "surface-container": "#edeeef",
+                        "primary-fixed-dim": "#b3d17a",
+                        "outline-variant": "#c5c8b7",
+                        "secondary-fixed": "#dce2f7",
+                        "secondary": "#575e70",
+                        "on-error": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#5c6274",
+                        "outline": "#75796a",
+                        "inverse-surface": "#2e3132",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "stack-lg": "2rem",
+                        "stack-md": "1rem",
+                        "margin-mobile": "1rem",
+                        "stack-sm": "0.5rem",
+                        "margin-desktop": "2.5rem",
+                        "gutter": "1.5rem"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Geist"],
+                        "headline-lg-mobile": ["Geist"],
+                        "headline-display": ["Geist"],
+                        "body-sm": ["Inter"],
+                        "label-caps": ["Geist"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["24px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "headline-display": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #f8f9fa;
+            background-image: 
+                linear-gradient(to right, rgba(0,0,0,0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0,0,0,0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid #E5E7EB;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .active-pill {
+            background-color: #d9f99d;
+            color: #111827;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface">
+<!-- Sidebar Navigation Shell -->
+<aside class="hidden md:flex flex-col h-screen w-64 fixed left-0 top-0 overflow-y-auto bg-surface-container-lowest border-r border-outline-variant p-stack-md z-50">
+<div class="flex items-center gap-3 mb-10 px-2">
+<div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined">architecture</span>
+</div>
+<div>
+<h1 class="font-headline-display text-[20px] font-black text-primary leading-tight">TenaxAI</h1>
+<p class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-widest">Product OS</p>
+</div>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-all font-body-sm" href="#">
+<span class="material-symbols-outlined">architecture</span> Product Builder
+            </a>
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-all font-body-sm" href="#">
+<span class="material-symbols-outlined">query_stats</span> Market &amp; Fit
+            </a>
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-all font-body-sm" href="#">
+<span class="material-symbols-outlined">campaign</span> Creative Messaging
+            </a>
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-all font-body-sm" href="#">
+<span class="material-symbols-outlined">analytics</span> Risk Simulation
+            </a>
+<a class="flex items-center gap-3 px-3 py-2 bg-primary-container text-on-primary-container rounded-lg font-bold font-body-sm" href="#">
+<span class="material-symbols-outlined">folder_open</span> Resources
+            </a>
+</nav>
+<div class="mt-auto pt-6 border-t border-outline-variant space-y-1">
+<button class="w-full bg-primary-container text-on-primary-container font-bold py-2.5 rounded-lg mb-4 flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-[18px]">add</span> New Project
+            </button>
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-high rounded-lg font-body-sm" href="#">
+<span class="material-symbols-outlined">help</span> Help Center
+            </a>
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-high rounded-lg font-body-sm" href="#">
+<span class="material-symbols-outlined">person</span> Account
+            </a>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="md:ml-64 min-h-screen relative">
+<!-- Top Nav Header -->
+<header class="sticky top-0 w-full h-16 bg-surface/80 backdrop-blur-md border-b border-outline-variant/50 flex items-center justify-between px-gutter z-40">
+<div class="flex items-center gap-4">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface md:hidden">TenaxAI</span>
+<nav class="hidden lg:flex items-center gap-6 ml-4">
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Documentation</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">API Reference</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Community</a>
+</nav>
+</div>
+<div class="flex items-center gap-3">
+<button class="p-2 hover:bg-surface-container-low rounded-full transition-all text-on-surface-variant">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="p-2 hover:bg-surface-container-low rounded-full transition-all text-on-surface-variant">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-surface-container-high overflow-hidden border border-outline-variant">
+<img alt="User Avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPZnMU2-Ozc1eN4hq9ejWGvUDg0euDOAFHuddXpuk8-0Mm2EQGsoHv7lA7BaKTqRzatliCCacwboX6ZAME4HrByhk74NIKEfvglIn8ZOtzCzSUsGzOvlMYfQyJ8P2OctNPJRAnGzAZNgty4ZBWhYKx-fr6kQwoAwbHYRbAAQE9NYtBmXd7f-o_9SNHQahA3Sw7Q53przcMPoN9I45_XmcFJ-CB5wIrG4i-OO3GNJm7caWhEJfklr2du3uW90rmID0OEymwliqcsJWt"/>
+</div>
+</div>
+</header>
+<div class="max-w-container-max mx-auto px-gutter py-stack-lg">
+<!-- Header Section -->
+<section class="mb-12">
+<div class="inline-block bg-primary-container/20 text-on-primary-fixed-variant px-3 py-1 rounded-full font-label-caps mb-4 border border-primary-fixed">
+                    Resources Directory
+                </div>
+<h1 class="font-headline-display text-headline-display mb-4">Engineering Ecosystem</h1>
+<p class="font-body-md text-on-surface-variant max-w-2xl">
+                    Discover and integrate world-class APIs, SDKs, and developer tools curated for high-performance product engineering. From payments to communication infra.
+                </p>
+</section>
+<!-- Search and Filter Bar -->
+<div class="flex flex-col md:flex-row gap-4 mb-10 items-center justify-between sticky top-20 z-30 py-2">
+<div class="relative w-full md:max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="w-full pl-10 pr-4 py-3 bg-surface-container-lowest border border-outline-variant rounded-xl focus:ring-2 focus:ring-tertiary/20 focus:border-tertiary transition-all outline-none" placeholder="Search APIs, tools, frameworks..." type="text"/>
+</div>
+<div class="flex items-center gap-2 overflow-x-auto w-full md:w-auto pb-2 md:pb-0 scrollbar-hide">
+<button class="px-4 py-2 rounded-full font-label-caps active-pill whitespace-nowrap">All</button>
+<button class="px-4 py-2 rounded-full font-label-caps bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-colors whitespace-nowrap">Payments</button>
+<button class="px-4 py-2 rounded-full font-label-caps bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-colors whitespace-nowrap">Communication</button>
+<button class="px-4 py-2 rounded-full font-label-caps bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-colors whitespace-nowrap">DevOps</button>
+<button class="px-4 py-2 rounded-full font-label-caps bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-colors whitespace-nowrap">AI/ML</button>
+</div>
+</div>
+<!-- API Resource Cards (Bento Style) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter mb-16">
+<!-- Paystack -->
+<div class="glass-card rounded-xl p-6 group flex flex-col">
+<div class="flex justify-between items-start mb-6">
+<div class="w-14 h-14 rounded-xl bg-[#011B33] flex items-center justify-center p-2 overflow-hidden">
+<img alt="Paystack" class="w-full h-full object-contain" data-alt="A clean, minimalist tech company logo featuring sharp typography and a professional blue color palette, rendered in a high-fidelity vector style. The logo represents a modern financial technology platform, set against a dark, tech-oriented background with subtle geometric accents and high-precision lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMOA9sMfIBAgSFMqG3Ghn1ojtz9-tWGROB8rkWHoS8KnYkdGrmUKRyztKauzwd1EHnzM5U7fzkV6J1mgLIcdmrJnDjAGL7G_MNzXwvUjiaAQxUolFbPc9IzlKisAv079iHZuRM82aMou40vgsjjqTCOmBjNIIY32U3q3_UsBir97J-bz5JfxCoIo5RneLJCjzzRgM0Ctv2nVY5iIJBeFd7TSbP-d_F_hNrd7pjdYnTRZOrb59QiJ1g1i1ZtaskTik9IZ4kKssx2CU4"/>
+</div>
+<button class="p-2 rounded-full hover:bg-primary-container/20 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">bookmark_add</span>
+</button>
+</div>
+<div class="mb-4">
+<h3 class="font-headline-lg text-[22px] mb-1">Paystack</h3>
+<div class="flex gap-2 mb-3">
+<span class="font-label-caps text-[10px] text-tertiary bg-tertiary-container px-2 py-0.5 rounded">PAYMENTS</span>
+<span class="font-label-caps text-[10px] text-on-primary-fixed-variant bg-primary-container px-2 py-0.5 rounded">AFRICA</span>
+</div>
+<p class="font-body-sm text-on-surface-variant">Modern payment infrastructure for Africa. Accept payments, send transfers, and manage business tools with a world-class API.</p>
+</div>
+<div class="mt-auto flex items-center justify-between pt-4 border-t border-outline-variant/30">
+<a class="font-label-caps text-primary hover:underline flex items-center gap-1" href="#">VIEW DOCS <span class="material-symbols-outlined text-[14px]">arrow_outward</span></a>
+<div class="flex items-center text-on-surface-variant gap-1">
+<span class="material-symbols-outlined text-[16px] text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-body-sm font-semibold">4.9</span>
+</div>
+</div>
+</div>
+<!-- Stripe Atlas -->
+<div class="glass-card rounded-xl p-6 group flex flex-col">
+<div class="flex justify-between items-start mb-6">
+<div class="w-14 h-14 rounded-xl bg-[#635BFF] flex items-center justify-center p-2 overflow-hidden">
+<img alt="Stripe Atlas" class="w-full h-full object-contain" data-alt="A sleek corporate technology logo for a global company formation tool, featuring gradient purple and blue tones. The visual style is modern glassmorphism with high-key lighting, emphasizing structural integrity and global scalability. The background is a clean, blueprint-inspired grid in a professional studio setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyB50vSVXUuhlAj4mEbf2ildjHZmnFxzugnlmxyKFN0JduARqtFVtM4EuzL-WJ62_JxL-cyNIOw_dh4rtgV4YOeOZZaLu4AjsRsQXZLyY87r2WT8AtrDxgrBOH4WgzwpO0-J37kyLoHWfsNX29WWQIZL3PcWVGviKIy-xCQm9044b12IWUchfHiQAFfX53QOdkMrAGmoYmrJZmonrOZBv0xtZHYlRQl8JTdSlVF5BwpvsOfkNd7H64g3aJiP_aWUqEl4wLH8QYxQUI"/>
+</div>
+<button class="p-2 rounded-full hover:bg-primary-container/20 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">bookmark_add</span>
+</button>
+</div>
+<div class="mb-4">
+<h3 class="font-headline-lg text-[22px] mb-1">Stripe Atlas</h3>
+<div class="flex gap-2 mb-3">
+<span class="font-label-caps text-[10px] text-tertiary bg-tertiary-container px-2 py-0.5 rounded">INCORPORATION</span>
+<span class="font-label-caps text-[10px] text-on-primary-fixed-variant bg-primary-container px-2 py-0.5 rounded">GLOBAL</span>
+</div>
+<p class="font-body-sm text-on-surface-variant">A powerful way to start an internet business from anywhere. Incorporate in the US, get a bank account, and start accepting payments.</p>
+</div>
+<div class="mt-auto flex items-center justify-between pt-4 border-t border-outline-variant/30">
+<a class="font-label-caps text-primary hover:underline flex items-center gap-1" href="#">VIEW DOCS <span class="material-symbols-outlined text-[14px]">arrow_outward</span></a>
+<div class="flex items-center text-on-surface-variant gap-1">
+<span class="material-symbols-outlined text-[16px] text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-body-sm font-semibold">5.0</span>
+</div>
+</div>
+</div>
+<!-- Africa's Talking -->
+<div class="glass-card rounded-xl p-6 group flex flex-col">
+<div class="flex justify-between items-start mb-6">
+<div class="w-14 h-14 rounded-xl bg-surface-container flex items-center justify-center p-2 overflow-hidden border border-outline-variant/50">
+<img alt="Africa's Talking" class="w-full h-full object-contain" data-alt="A technical communication platform logo focusing on mobile connectivity and developer tools. The aesthetic is clean and industrial, with a palette of deep charcoal and vibrant lime accents. Lighting is soft and diffuse, highlighting the crisp edges of a modern interface design in a high-performance developer workspace." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhIY-VkT6ElsdsM_M4ooIpWbn_dphWwCBjC4HZZ0MBbGBqr3vT-UViXxZhscBxqTZa7Vi-enGIIcH1E-1eW86quA_016pllJaJMIFSyoiG21-m_4YBvx9jvxnrvvDRMt-VIm1PcqaG0LLjUGmj1UsT7qJ5zAbRiPDMM_hdi7hFL1R7ssKl0v0h6JdZfjNStOQpn4H5s0fPaiMT9OrzswSsNq_jv1K7HUv4W9ek16YE0udtqg-fEUu7IDVPhpuHBO8V6VoNFI_FERvM"/>
+</div>
+<button class="p-2 rounded-full hover:bg-primary-container/20 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">bookmark_add</span>
+</button>
+</div>
+<div class="mb-4">
+<h3 class="font-headline-lg text-[22px] mb-1">Africa's Talking</h3>
+<div class="flex gap-2 mb-3">
+<span class="font-label-caps text-[10px] text-tertiary bg-tertiary-container px-2 py-0.5 rounded">SMS &amp; VOICE</span>
+<span class="font-label-caps text-[10px] text-on-primary-fixed-variant bg-primary-container px-2 py-0.5 rounded">COMMS</span>
+</div>
+<p class="font-body-sm text-on-surface-variant">Pan-African communications platform. Integrate SMS, USSD, Voice, and Airtime APIs into your applications with ease.</p>
+</div>
+<div class="mt-auto flex items-center justify-between pt-4 border-t border-outline-variant/30">
+<a class="font-label-caps text-primary hover:underline flex items-center gap-1" href="#">VIEW DOCS <span class="material-symbols-outlined text-[14px]">arrow_outward</span></a>
+<div class="flex items-center text-on-surface-variant gap-1">
+<span class="material-symbols-outlined text-[16px] text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-body-sm font-semibold">4.7</span>
+</div>
+</div>
+</div>
+<!-- Twilio -->
+<div class="glass-card rounded-xl p-6 group flex flex-col">
+<div class="flex justify-between items-start mb-6">
+<div class="w-14 h-14 rounded-xl bg-[#F22F46] flex items-center justify-center p-2 overflow-hidden">
+<img alt="Twilio" class="w-full h-full object-contain" data-alt="A professional cloud communications company logo featuring iconic red and white branding elements. The composition is modern and technical, set against a background of high-tech server racks and glowing network lines. The lighting is crisp and clean, reflecting a high-precision, enterprise-grade software environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_eB3Baa3N4BmgoyI2BwIdUrBqyNkJWG4_ye4W_OrNUvrv-d0BNbKVsHgLCMK22kobyx-2D5365kNVsmvcNyFA3Nn1ZneZdq_xZicc-E_Y9L31Iekk1tHCtT3OovyR9EDqbqhUAuXqTLp3zwax5Gef6Zc_48zC4ZrBVLoOX2wR2u1soy84AG7PCEz-TJVNn9aWE5-uEbAFn2kWWjlcxi_NA_7qf7mOHjZgXOyfIdOcGuRI_zwcoKlH6D4jBicqCMxtKCmsxthzXlGg"/>
+</div>
+<button class="p-2 rounded-full hover:bg-primary-container/20 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">bookmark_add</span>
+</button>
+</div>
+<div class="mb-4">
+<h3 class="font-headline-lg text-[22px] mb-1">Twilio</h3>
+<div class="flex gap-2 mb-3">
+<span class="font-label-caps text-[10px] text-tertiary bg-tertiary-container px-2 py-0.5 rounded">COMMUNICATION</span>
+<span class="font-label-caps text-[10px] text-on-primary-fixed-variant bg-primary-container px-2 py-0.5 rounded">API</span>
+</div>
+<p class="font-body-sm text-on-surface-variant">The world's leading cloud communication platform. Connect with customers across every channel with a single powerful API.</p>
+</div>
+<div class="mt-auto flex items-center justify-between pt-4 border-t border-outline-variant/30">
+<a class="font-label-caps text-primary hover:underline flex items-center gap-1" href="#">VIEW DOCS <span class="material-symbols-outlined text-[14px]">arrow_outward</span></a>
+<div class="flex items-center text-on-surface-variant gap-1">
+<span class="material-symbols-outlined text-[16px] text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-body-sm font-semibold">4.8</span>
+</div>
+</div>
+</div>
+<!-- AWS Cloud -->
+<div class="glass-card rounded-xl p-6 group flex flex-col">
+<div class="flex justify-between items-start mb-6">
+<div class="w-14 h-14 rounded-xl bg-[#232F3E] flex items-center justify-center p-2 overflow-hidden">
+<img alt="AWS" class="w-full h-full object-contain" data-alt="A global cloud infrastructure logo featuring iconic orange and dark blue branding. The scene depicts a vast network of interconnected data centers under a starry sky, representing massive computing power and storage. The visual style is highly technical, with soft ambient blue lighting and sharp, high-contrast details." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4L_CtYZUjD5PL8RmXC2_qA8IhcegCirq0Oyb4uo68uPGm6cG31pncKHNNrI8t8aiM38AOrfZTgPSQ9c170HxR_Jg95idJBFXpUQCBzEJHymxK0M6Z4mFoSMyK_R4I-ee_HDWaQ5s55LPoBa7m_WBI3jfZdMFxb3ckq8YED1PG2dTzqSYuLQS4oUpoDCET6Z2_pXPm1cd68gn82TU-Xg46F_sqp02pKkjf8NqiYb2qV59iIuaJO6oFbfDPTwLuBLdNq0IkQGKLj1Su"/>
+</div>
+<button class="p-2 rounded-full hover:bg-primary-container/20 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">bookmark_add</span>
+</button>
+</div>
+<div class="mb-4">
+<h3 class="font-headline-lg text-[22px] mb-1">AWS</h3>
+<div class="flex gap-2 mb-3">
+<span class="font-label-caps text-[10px] text-tertiary bg-tertiary-container px-2 py-0.5 rounded">INFRASTRUCTURE</span>
+<span class="font-label-caps text-[10px] text-on-primary-fixed-variant bg-primary-container px-2 py-0.5 rounded">CLOUD</span>
+</div>
+<p class="font-body-sm text-on-surface-variant">On-demand cloud computing platforms and APIs. Build, deploy, and scale virtually any type of application with reliability.</p>
+</div>
+<div class="mt-auto flex items-center justify-between pt-4 border-t border-outline-variant/30">
+<a class="font-label-caps text-primary hover:underline flex items-center gap-1" href="#">VIEW DOCS <span class="material-symbols-outlined text-[14px]">arrow_outward</span></a>
+<div class="flex items-center text-on-surface-variant gap-1">
+<span class="material-symbols-outlined text-[16px] text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-body-sm font-semibold">4.9</span>
+</div>
+</div>
+</div>
+<!-- Supabase -->
+<div class="glass-card rounded-xl p-6 group flex flex-col">
+<div class="flex justify-between items-start mb-6">
+<div class="w-14 h-14 rounded-xl bg-[#1C1C1C] flex items-center justify-center p-2 overflow-hidden">
+<img alt="Supabase" class="w-full h-full object-contain" data-alt="An open-source database platform logo featuring a bright green thunderbolt symbol. The design is modern and minimalist, set against a dark background that emphasizes the vibrant green color. Lighting is clinical and high-precision, creating a sense of rapid speed and developer-focused efficiency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2heg-v8QSYm48xwdiXNzseFfOfeq5FDpsK8Ya-UUBrvsteJwygRG0ctFZpXMxHHLsM3S-ND6ojXuDrU34QUmGwWkoVodUjnDlo45T8o6rblOhDfMOs_gGKTY07rSg3zcv5e1q3oyLno4LSk0hLSxndkkRUJsvUj92nmJg7lX2UkKrzRM6Ft9WlasjxFpI5j0sW3qx-xt1t5r5wNt8GshTeS5jBcXJIjbHfW4QAte_mWN9O8S5R4uPZ1EOyNZWQl_n40Q2qeotAFHz"/>
+</div>
+<button class="p-2 rounded-full hover:bg-primary-container/20 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">bookmark_add</span>
+</button>
+</div>
+<div class="mb-4">
+<h3 class="font-headline-lg text-[22px] mb-1">Supabase</h3>
+<div class="flex gap-2 mb-3">
+<span class="font-label-caps text-[10px] text-tertiary bg-tertiary-container px-2 py-0.5 rounded">DATABASE</span>
+<span class="font-label-caps text-[10px] text-on-primary-fixed-variant bg-primary-container px-2 py-0.5 rounded">OPEN SOURCE</span>
+</div>
+<p class="font-body-sm text-on-surface-variant">The open source Firebase alternative. Start your project with a Postgres database, Authentication, and instant APIs.</p>
+</div>
+<div class="mt-auto flex items-center justify-between pt-4 border-t border-outline-variant/30">
+<a class="font-label-caps text-primary hover:underline flex items-center gap-1" href="#">VIEW DOCS <span class="material-symbols-outlined text-[14px]">arrow_outward</span></a>
+<div class="flex items-center text-on-surface-variant gap-1">
+<span class="material-symbols-outlined text-[16px] text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-body-sm font-semibold">4.8</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Saved Resources Section -->
+<section class="border-t border-outline-variant pt-12">
+<div class="flex items-center justify-between mb-8">
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-1">Saved Resources</h2>
+<p class="font-body-sm text-on-surface-variant">Quick access to your frequently used developer tools.</p>
+</div>
+<button class="text-primary font-label-caps hover:underline flex items-center gap-1">
+                        VIEW ALL SAVED <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Saved Item 1 -->
+<div class="glass-card p-4 rounded-xl flex items-center gap-4">
+<div class="w-10 h-10 bg-surface-container rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">terminal</span>
+</div>
+<div class="flex-1">
+<h4 class="font-body-md font-bold leading-tight">Docker Hub</h4>
+<p class="font-label-caps text-[10px] text-on-surface-variant">CONTAINERIZATION</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] cursor-pointer hover:text-error">delete</span>
+</div>
+<!-- Saved Item 2 -->
+<div class="glass-card p-4 rounded-xl flex items-center gap-4">
+<div class="w-10 h-10 bg-surface-container rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary">schema</span>
+</div>
+<div class="flex-1">
+<h4 class="font-body-md font-bold leading-tight">Prisma ORM</h4>
+<p class="font-label-caps text-[10px] text-on-surface-variant">DATABASE</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] cursor-pointer hover:text-error">delete</span>
+</div>
+<!-- Saved Item 3 -->
+<div class="glass-card p-4 rounded-xl flex items-center gap-4">
+<div class="w-10 h-10 bg-surface-container rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-[#3178C6]">code</span>
+</div>
+<div class="flex-1">
+<h4 class="font-body-md font-bold leading-tight">TypeScript Docs</h4>
+<p class="font-label-caps text-[10px] text-on-surface-variant">LANGUAGE</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] cursor-pointer hover:text-error">delete</span>
+</div>
+<!-- Saved Item 4 -->
+<div class="glass-card p-4 rounded-xl flex items-center gap-4">
+<div class="w-10 h-10 bg-surface-container rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-[#FF6C37]">api</span>
+</div>
+<div class="flex-1">
+<h4 class="font-body-md font-bold leading-tight">Postman</h4>
+<p class="font-label-caps text-[10px] text-on-surface-variant">TESTING</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] cursor-pointer hover:text-error">delete</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Footer -->
+<footer class="mt-20 py-12 px-gutter border-t border-outline-variant bg-surface-container-low/50">
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-start gap-10">
+<div class="max-w-sm">
+<div class="flex items-center gap-2 mb-4">
+<div class="w-8 h-8 rounded bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[18px]">architecture</span>
+</div>
+<span class="font-headline-lg text-[24px] font-bold">TenaxAI</span>
+</div>
+<p class="font-body-sm text-on-surface-variant mb-6">Building the next generation of intelligent product operating systems for technical founders and enterprise engineers.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary-container transition-colors text-on-surface-variant hover:text-primary" href="#">
+<span class="material-symbols-outlined text-[20px]">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary-container transition-colors text-on-surface-variant hover:text-primary" href="#">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary-container transition-colors text-on-surface-variant hover:text-primary" href="#">
+<span class="material-symbols-outlined text-[20px]">alternate_email</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-12">
+<div>
+<h5 class="font-label-caps mb-4 text-on-surface">PLATFORM</h5>
+<ul class="space-y-2 font-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Documentation</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">API Keys</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Pricing</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Status</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-caps mb-4 text-on-surface">COMPANY</h5>
+<ul class="space-y-2 font-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Blog</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Privacy</a></li>
+</ul>
+</div>
+<div class="hidden sm:block">
+<h5 class="font-label-caps mb-4 text-on-surface">RESOURCES</h5>
+<ul class="space-y-2 font-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Ecosystem</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Integrations</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Security</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto mt-16 pt-8 border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-4 text-on-surface-variant font-label-caps text-[11px]">
+<p>© 2024 TENAXAI ENGINE. ALL RIGHTS RESERVED.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary transition-colors" href="#">TERMS OF SERVICE</a>
+<a class="hover:text-primary transition-colors" href="#">PRIVACY POLICY</a>
+<a class="hover:text-primary transition-colors" href="#">COOKIE SETTINGS</a>
+</div>
+</div>
+</footer>
+</main>
+<!-- Mobile Bottom Navigation (Visible only on small screens) -->
+<nav class="md:hidden fixed bottom-0 left-0 right-0 h-16 bg-surface/90 backdrop-blur-lg border-t border-outline-variant/30 flex items-center justify-around px-4 z-50">
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined">architecture</span>
+<span class="text-[10px] font-label-caps">HOME</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined">query_stats</span>
+<span class="text-[10px] font-label-caps">MARKET</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">folder_open</span>
+<span class="text-[10px] font-label-caps font-bold">RESOURCES</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined">analytics</span>
+<span class="text-[10px] font-label-caps">SIMS</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-label-caps">ACCOUNT</span>
+</a>
+</nav>
+<script>
+        // Micro-interaction for resource cards
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                // Subtle lift handled by CSS, can add more logic here
+            });
+        });
+
+        // Search bar highlight logic
+        const searchInput = document.querySelector('input[type="text"]');
+        searchInput.addEventListener('focus', () => {
+            searchInput.parentElement.classList.add('scale-[1.02]');
+        });
+        searchInput.addEventListener('blur', () => {
+            searchInput.parentElement.classList.remove('scale-[1.02]');
+        });
+    </script>
+</body></html>
