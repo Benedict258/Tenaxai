@@ -1,111 +1,108 @@
-# <img src="./tenaxai_logo.svg" alt="Tenaxai Logo" width="50" vertical-align="middle"> Tenaxai
+# Tenaxai
 
-[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
-[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![License](https://img.shields.io/badge/License-Private-red.svg?style=for-the-badge)](LICENSE)
+Tenaxai is a high-fidelity, AI-driven **Product Launch Operating System** designed to move technical products from concept to global scale with precision. It replaces guesswork-driven marketing with agentic workflows, strategic simulations, and execution tooling.
 
-**Tenaxai** is a high-fidelity, AI-driven **Product Launch Operating System** engineered to transition technical products from concept to global scale with mathematical precision. By replacing traditional "guesswork" marketing with a fleet of specialized AI agents and strategic simulations, Tenaxai provides a predictable, repeatable pipeline for market entry.
+## Table of Contents
+- [Product Vision](#product-vision)
+- [Agentic Fleet (Unit 01-06)](#agentic-fleet-unit-01-06)
+- [Key Workspaces and Modules](#key-workspaces-and-modules)
+- [Technical Stack](#technical-stack)
+- [Design System: Engineering Rigor](#design-system-engineering-rigor)
+- [Getting Started](#getting-started)
+- [Development Roadmap](#development-roadmap)
+- [Project Status](#project-status)
 
----
+## Product Vision
 
-## 🎯 Product Vision
-
-To provide technical founders and enterprise product teams with a **"Command Center"** that treats product launches as a rigorous systems-engineering task.
+Provide technical founders and enterprise product teams with a **Command Center** that treats product launches as rigorous systems-engineering work.
 
 - **Objective:** Minimize launch failure through deep simulation.
 - **Philosophy:** Engineering Rigor > Marketing Guesswork.
-- **Core Value:** Automating the data-heavy lifting of research, localization, and creative execution.
+- **Core Value:** Automate research, localization, and creative execution.
 
----
+## Agentic Fleet (Unit 01-06)
 
-## 🤖 The Agentic Fleet (Unit 01-06)
-
-The system is powered by a multi-agent architecture where the **Flux Growth Copilot** routes complex strategic tasks to specialized units:
+The **Flux Growth Copilot** orchestrates specialized units:
 
 | Unit | Agent Name | Primary Function |
 | :--- | :--- | :--- |
-| **01** | **Growth Copilot** | Central Orchestrator & Router. |
-| **02** | **Market Analyst** | Deep geographic research & competitive discovery. |
-| **03** | **Creative Generator** | High-fidelity ad, email, and localized copy synthesis. |
-| **04** | **Budget Optimizer** | ROI forecasting and spend allocation logic. |
-| **05** | **Risk Simulator** | Monte Carlo "what-if" threat modeling. |
-| **06** | **MarketMentor** | Project-aware, real-time strategic consultant. |
+| **01** | **Growth Copilot** | Central orchestrator and router |
+| **02** | **Market Analyst** | Geographic research and competitive discovery |
+| **03** | **Creative Generator** | Ad, email, and localized copy synthesis |
+| **04** | **Budget Optimizer** | ROI forecasting and spend allocation |
+| **05** | **Risk Simulator** | Monte Carlo what-if threat modeling |
+| **06** | **MarketMentor** | Real-time strategic consultation |
 
----
+## Key Workspaces and Modules
 
-## 🏗️ Key Workspaces & Modules
+The application includes 19 launch-lifecycle modules grouped into three domains.
 
-The application is structured into 19 specialized modules categorized by the launch lifecycle:
+### A. Discovery and Architecture
+- **Product Builder:** Ingests technical docs (PDF/DOCX) and synthesizes requirements.
+- **Market Explorer:** Performs region-to-city opportunity analysis.
+- **BMC Builder:** Builds AI-assisted business model canvases for unit-economics validation.
 
-### **A. Discovery & Architecture**
-- **Product Builder:** Technical doc ingestion (PDF/Docx) and requirement synthesis.
-- **Market Explorer:** Granular geographic analysis (Region → City) with opportunity scoring.
-- **BMC Builder:** AI-architected Business Model Canvas for unit economic validation.
+### B. Validation and Intelligence
+- **Market and Fit Core:** Runs stress tests, survey protocol generation, and confusion detection.
+- **Persona Builder:** Creates behavioral and demographic buyer architectures.
+- **Analytics and Forecasting:** Produces demand and adoption projections.
 
-### **B. Validation & Intelligence**
-- **Market & Fit Core:** High-fidelity stress tests, survey protocol generation, and feature confusion detection.
-- **Persona Builder:** Generation of detailed buyer architectures with behavioral and demographic data.
-- **Analytics & Forecasting:** Predictive demand modeling and adoption curve synthesis.
+### C. Execution and Defense
+- **Creative Messaging:** Generates multichannel ad variants and outreach content.
+- **Risk Simulation:** Models supply chain, regulatory, and competitive threats.
+- **Resources and Library:** Stores generated artifacts and saved snippets.
 
-### **C. Execution & Defense**
-- **Creative Messaging:** Multi-channel ad variant generator and outreach synthesizer.
-- **Risk Simulation:** Strategic threat modeling against supply chain, regulatory, and competitive shifts.
-- **Resources & Library:** A technical vault for all generated artifacts and "saved snippets."
+## Technical Stack
 
----
+- **Frontend:** React + Vite + Tailwind CSS
+- **Animations:** Framer Motion
+- **UI Framework:** Radix UI Primitives
+- **Backend:** Base44 (headless BaaS) via `tenaxai.base44.app`
+- **SDK:** `@base44/sdk`
 
-## 💻 Technical Stack
+## Design System: Engineering Rigor
 
-- **Frontend:** `React` + `Vite` + `Tailwind CSS`
-- **Animations:** `Framer Motion` (for technical "blueprint" transitions)
-- **UI Framework:** `Radix UI Primitives` (Customized for "Engineering Rigor")
-- **Backend:** Headless BaaS (Base44) with a live proxy to `tenaxai.base44.app`
-- **SDK:** `@base44/sdk` for entity management and AI invocation
+- **Background:** 40px geometric blueprint grid
+- **Colors:** Lime Green (`#d9f99d`) accents on Surface White (`#f7f9fb`)
+- **Depth:** Glassmorphism (`glass-card`) blur layers
+- **Typography:** Geist Sans + Geist Mono
 
----
-
-## 🎨 Design System: "Engineering Rigor"
-
-The UI is built to resemble a **Technical Blueprint**:
-
-- **Background:** 40px Geometric Blueprint Grid.
-- **Colors:** Lime Green (`#d9f99d`) primary accents on a minimal Surface White (`#f7f9fb`) base.
-- **Depth:** Glassmorphism (`glass-card`) with high-fidelity blur effects.
-- **Typography:** `Geist Sans` & `Mono` for a precise, industrial feel.
-
----
-
-## 🚀 Installation & Deployment
+## Getting Started
 
 ### Prerequisites
-- Node.js (Latest LTS recommended)
-- npm or yarn
+- Node.js (latest LTS recommended)
+- npm (or yarn)
 
-### Setup
+### Installation
 ```bash
-# Clone the repository
-git clone [repository-url]
-
-# Install dependencies
+git clone <repository-url>
+cd Tenaxai
 npm install
+```
 
-# Initialize development server
+### Run Locally
+```bash
 npm run dev
 ```
 
----
+### Available Scripts
+```bash
+npm run dev       # Start local dev server
+npm run build     # Build production bundle
+npm run lint      # Run ESLint
+npm run typecheck # Run TypeScript checks via jsconfig
+```
 
-## 🗺️ Development Roadmap
+## Development Roadmap
 
-- [x] High-fidelity UI Overhaul (Engineering Rigor)
-- [x] End-to-End AI Integration (Units 01-06)
-- [x] Geographic Intelligence Engine (Market Explorer)
-- [x] Automated Persona Architecture (Persona Builder)
-- [ ] Backend Migration (See `BuildDocs/BackendMigration.md`)
-- [ ] Real-time Collaborative Vaults
+- [x] High-fidelity UI overhaul (Engineering Rigor)
+- [x] End-to-end AI integration (Units 01-06)
+- [x] Geographic intelligence engine (Market Explorer)
+- [x] Automated persona architecture (Persona Builder)
+- [ ] Backend migration (see `BuildDocs/BackendMigration.md`)
+- [ ] Real-time collaborative vaults
 
----
+## Project Status
 
-> **Tenaxai Systems Architecture**
-> _Status: Alpha v4.1 | Protocol: Active_
+**Tenaxai Systems Architecture**  
+_Status: Alpha v4.1 · Protocol: Active_
