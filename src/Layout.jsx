@@ -55,8 +55,8 @@ const Layout = ({ children }) => {
             className="p-6 mb-4 whitespace-nowrap hover:bg-surface-container-low transition-colors w-full text-left"
           >
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-primary-container rounded-lg flex items-center justify-center shrink-0 shadow-sm border border-primary/10">
-                <Layers className="text-primary" size={24} />
+              <div className="w-10 h-10 bg-primary-container rounded-lg flex items-center justify-center shrink-0 shadow-sm border border-primary/10 overflow-hidden">
+                <img src="/logo.svg" alt="Tenaxai" className="w-6 h-6" />
               </div>
               <AnimatePresence>
                 {!isCollapsed && (
